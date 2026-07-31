@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <title>Privacy — The Worn Page</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --sky: #d6eaf8; --sky-mid: #aed6f1; --sky-deep: #5dade2; --sky-dark: #2e86c1;
+      --brown-light: #f5e6d3; --brown-mid: #d4a574; --brown: #a0714f; --brown-dark: #6b4c2a;
+      --cream: #fdf8f2; --ink: #1e1a14; --muted: #7a8fa0; --border: #c8dce8;
+    }
+    html { scroll-behavior: smooth; }
+    body { background-color: var(--cream); color: var(--ink); font-family: 'Lora', Georgia, serif; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #2e86c1 0%, #5dade2 40%, #a0714f 100%); color: white; padding: 2rem 2rem 0; text-align: center; }
+    header::after { content: ''; display: block; height: 3px; background: linear-gradient(90deg, transparent, #f5e6d3, #d4a574, #f5e6d3, transparent); margin-top: 1.5rem; }
+    .site-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1; }
+    .site-author { font-family: 'Lora', serif; font-style: italic; color: #d6eaf8; font-size: 0.9rem; margin-top: 0.3rem; }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; padding: 1.2rem 0; }
+    nav a { color: #d6eaf8; text-decoration: none; font-size: 0.82rem; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--brown-light); border-bottom: 1px solid var(--brown-light); padding-bottom: 2px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .page-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--brown-dark); margin-bottom: 0.3rem; }
+    .page-subtitle { font-style: italic; color: var(--sky-dark); font-size: 0.95rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--sky-mid); }
+    footer { background: #0d2137; color: #5d8aa8; text-align: center; padding: 2rem; font-size: 0.82rem; }
+    footer a { color: #7fb3cc; text-decoration: none; }
+    footer a:hover { color: var(--brown-light); }
+    .footer-deco { color: var(--brown-mid); font-size: 1rem; margin-bottom: 0.5rem; opacity: 0.6; }
+  </style>
+
+</head>
+<body>
+  <header>
+    <a href="index.html" style="text-decoration:none; color:white;">
+      <h1 class="site-title">The Worn Page</h1>
+      <p class="site-author">by Goodness Ugochukwu</p>
+    </a>
+    <nav>
+      <a href="reviews.html">Reviews</a>
+      <a href="reading-list.html">Reading List</a>
+      <a href="favourites.html">Favourites</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <div class="container" style="max-width:700px;">
+    <p style="font-family:'Lora',serif;font-style:italic;color:var(--sky-dark);font-size:0.85rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.4rem;">✦ Legal Stuff</p>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="page-subtitle">Last updated: June 2025</p>
+
+    <div style="background:white;border:1px solid var(--border);border-top:3px solid var(--sky-deep);border-radius:4px;padding:2rem;box-shadow:3px 3px 0 var(--sky-mid);line-height:1.9;font-size:0.93rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--brown-dark);margin-bottom:0.5rem;">What information do we collect?</h2>
+      <p style="margin-bottom:1.2rem;color:#3a3228;">The only personal information we collect is your email address, and only if you choose to subscribe to the newsletter. We do not collect names, phone numbers, or any other personal data.</p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--brown-dark);margin-bottom:0.5rem;">How is your email used?</h2>
+      <p style="margin-bottom:1.2rem;color:#3a3228;">Your email is used solely to send you The Worn Page newsletter — new reviews, reading lists, and bookish updates. It is never sold or shared with third parties.</p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--brown-dark);margin-bottom:0.5rem;">Mailchimp</h2>
+      <p style="margin-bottom:1.2rem;color:#3a3228;">Newsletter subscriptions are managed through Mailchimp. By subscribing, you also agree to Mailchimp's privacy policy. You can unsubscribe at any time using the link at the bottom of any newsletter email.</p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--brown-dark);margin-bottom:0.5rem;">Cookies</h2>
+      <p style="margin-bottom:1.2rem;color:#3a3228;">This website does not use tracking cookies or analytics tools.</p>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--brown-dark);margin-bottom:0.5rem;">Contact</h2>
+      <p style="color:#3a3228;">If you have any questions about this privacy policy, you can reach out via the <a href="contact.html" style="color:var(--brown);">contact page</a>.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-deco">❧</div>
+    <p>© 2025 The Worn Page · Goodness Ugochukwu</p>
+    <p style="margin-top:0.4rem">
+      <a href="privacy.html">Privacy</a> · 
+      <a href="contact.html">Contact</a> · 
+      <a href="https://www.instagram.com/goodyoriginal_" target="_blank">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
